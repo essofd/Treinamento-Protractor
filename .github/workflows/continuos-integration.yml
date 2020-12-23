@@ -14,5 +14,7 @@ jobs:
       run: npm ci
     - name: Lint
       run: npm run lint
+    - name: Install WebDriver
+      run: npm install -g webDriver-manager
     - name: E2E tests
       run: npm run pretest:github && npm test
