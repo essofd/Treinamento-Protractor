@@ -3,10 +3,11 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Project checkout
         uses: actions/checkout@v1
-      - name: Node.js setup
+      - name: Use Node.js
         uses: actions/setup-node@v1.1.0
       - name: Installation of dependencies
         run: npm ci
