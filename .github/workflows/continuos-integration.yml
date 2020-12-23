@@ -15,4 +15,4 @@ jobs:
     - name: Lint
       run: npm run lint
     - name: E2E tests
-      run: npm run pretest:local && npm test
+      run: npm run pretest:github && npm test
